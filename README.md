@@ -17,6 +17,7 @@
 
 -   Run "docker exec -it laravel_db ./bin/bash" (Using Git Bash from Windows)
 -   mysql -u root -p (password: 14r4ve1)
+    > You can change this password in docker-compose.yml, mysql/.env & .env
 -   Run "GRANT ALL ON laravel.\* TO 'laraveluser'@'localhost' IDENTIFIED BY '14r4ve1';"
 -   Run "FLUSH PRIVILEGES;"
 -   Run "EXIT;"
