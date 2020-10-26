@@ -1,37 +1,29 @@
-## Welcome to GitHub Pages
+# Laravel/Docker
 
-You can use the [editor on GitHub](https://github.com/luchoweb/laravel-docker/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## Required
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+-   Docker
+-   PHP
+-   Composer
 
-### Markdown
+## Instalation
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+-   Clone repo
+-   Run "cd laravel-docker"
+-   Run "composer install"
+-   Run "docker-compose up -d"
 
-```markdown
-Syntax highlighted code block
+## Create MySQL user
 
-# Header 1
-## Header 2
-### Header 3
+-   Run "docker exec -it laravel_db ./bin/bash" (Using Git Bash from Windows)
+-   mysql -u root -p (password: 14r4ve1)
+    > You can change this password in docker-compose.yml, mysql/.env & .env
+-   Run "GRANT ALL ON laravel.\* TO 'laraveluser'@'localhost' IDENTIFIED BY '14r4ve1';"
+-   Run "FLUSH PRIVILEGES;"
+-   Run "EXIT;"
+-   Run "exit"
 
-- Bulleted
-- List
+Ready!
+Now you can go to http://localhost:8080
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/luchoweb/laravel-docker/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Happy coding!
