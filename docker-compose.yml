@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: Dockerfile
     image: laravel/docker
-    container_name: laravel-docker
+    container_name: laravel_docker
     restart: unless-stopped
     tty: true
     environment:
@@ -22,7 +22,7 @@ services:
   #Nginx Service
   webserver:
     image: nginx:alpine
-    container_name: webserver-laravel
+    container_name: laravel_webserver
     restart: unless-stopped
     tty: true
     ports:
@@ -37,7 +37,7 @@ services:
   #MySQL Service
   db:
     image: mysql:5.7.22
-    container_name: db-laravel
+    container_name: laravel_db
     restart: unless-stopped
     tty: true
     ports:
