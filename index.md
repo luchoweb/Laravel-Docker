@@ -22,7 +22,7 @@ $ docker-compose up -d
 ```bash
 $ docker exec -it laravel_db ./bin/bash
 $ mysql -u root -p (password: 14r4ve1)
-$ mysql> GRANT ALL ON laravel.\* TO 'laraveluser'@'localhost' IDENTIFIED BY '14r4ve1';
+$ mysql> GRANT ALL ON laravel.* TO 'laraveluser'@'localhost' IDENTIFIED BY '14r4ve1';
 $ mysql> FLUSH PRIVILEGES;
 $ mysql> EXIT;
 $ exit
