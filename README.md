@@ -1,4 +1,4 @@
-# Laravel + Docker = :heart: :computer:
+# Laravel + Docker
 
 ## Required
 
