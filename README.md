@@ -6,7 +6,9 @@
 -   PHP
 -   Composer
 
-## Instalation
+> You need to have previously installed the previous software.
+
+## Installation
 
 -   Clone repo
 -   Run "cd laravel-docker"
@@ -25,5 +27,6 @@
 
 Ready!
 Now you can go to http://localhost:8080
+> You can change this port (8080) in docker-compose.yml 
 
 Happy coding!
