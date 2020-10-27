@@ -10,7 +10,7 @@
 
 ## Installation
 
-```
+```bash
 $ git clone https://github.com/luchoweb/Laravel-Docker.git
 $ cd Laravel-Docker
 $ composer install
@@ -19,7 +19,7 @@ $ docker-compose up -d
 
 ## Create MySQL user
 
-```
+```bash
 $ docker exec -it laravel_db ./bin/bash
 $ mysql -u root -p (password: 14r4ve1)
 $ mysql> GRANT ALL ON laravel.\* TO 'laraveluser'@'localhost' IDENTIFIED BY '14r4ve1';
